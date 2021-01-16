@@ -1,0 +1,45 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "T02adminBindProductsRejectDelete_test",
+    "children" : [ {
+      "name" : "TestCaseT02Adminbindproductsrejectdelete",
+      "children" : [ {
+        "name" : "request methods testcase with functions",
+        "uid" : "c7f2df25b58f357a",
+        "parentUid" : "3a2d497fbe1f9286916b75e77584148d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1608298619007,
+          "stop" : 1608298628193,
+          "duration" : 9186
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3a2d497fbe1f9286916b75e77584148d"
+    } ],
+    "uid" : "248e07ae0899f90d6aff4b027c9202d2"
+  }, {
+    "name" : "T02adminBindProducts_test",
+    "children" : [ {
+      "name" : "TestCaseT02Adminbindproducts",
+      "children" : [ {
+        "name" : "request methods testcase with functions",
+        "uid" : "562a9058c0ee9a6b",
+        "parentUid" : "263e0258aafedba31916198d9e8ac991",
+        "status" : "passed",
+        "time" : {
+          "start" : 1608298628222,
+          "stop" : 1608298635174,
+          "duration" : 6952
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "263e0258aafedba31916198d9e8ac991"
+    } ],
+    "uid" : "ecbc1ea00a5aa3a17e13f74c66d3208a"
+  } ]
+}

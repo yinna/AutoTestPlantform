@@ -1,0 +1,7 @@
+# 这样别的模块就可以使用这个包
+from commonFunction import readConfig
+from commonFunction import getCommonData
+from commonFunction import timeOperation
+from commonFunction import StringSet
+from commonFunction import listOperation
+from commonFunction import commonDataFromRequest

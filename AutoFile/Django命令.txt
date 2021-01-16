@@ -1,0 +1,14 @@
+D:\python36\Scripts\;D:\python36\;%JAVA_HOME%\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;%ANT_HOME%/bin;C:\Program Files\nodejs\;D:\Git\cmd;D:\GitExtensions\;D:\mysql-8.0.19-winx64\bin
+
+python manage.py runserver yinja-w10:8000  #启动服务
+
+python manage.py createsuperuser   #创建admin登录用户
+admin 的账号密码：yinna   yinna1995!!
+客户端的账号密码：admin yinna1995!!
+
+python manage.py migrate # 创建表结构
+python manage.py makemigrations testcase  # 让 Django 知道我们在我们的模型有一些变更
+python manage.py migrate testcase   # 创建表结构
+
+
+

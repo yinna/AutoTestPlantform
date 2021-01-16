@@ -1,0 +1,1564 @@
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=11, microseconds=993256), 'exception': None, 'extra': {}, 'file': (name='runner.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\runner.py'), 'function': 'test_start', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 451, 'message': 'Start to run testcase: request methods testcase with functions, TestCase ID: ea2657f3-c9d8-44c6-8a40-921648ab9eee', 'module': 'runner', 'name': 'httprunner.runner', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 8, 225187, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=13, microseconds=113342), 'exception': None, 'extra': {}, 'file': (name='runner.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\runner.py'), 'function': '__run_step', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 292, 'message': 'run step begin: login >>>>>>', 'module': 'runner', 'name': 'httprunner.runner', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 9, 345273, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=13, microseconds=115343), 'exception': None, 'extra': {}, 'file': (name='runner.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\runner.py'), 'function': '__run_step', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 292, 'message': 'run step begin: get admin login captcha >>>>>>', 'module': 'runner', 'name': 'httprunner.runner', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 9, 347274, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=13, microseconds=260093), 'exception': None, 'extra': {}, 'file': (name='client.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\client.py'), 'function': 'request', 'level': (name='DEBUG', no=10, icon='🐞'), 'line': 187, 'message': 'client IP: 10.222.145.201, Port: 64130', 'module': 'client', 'name': 'httprunner.client', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 9, 492024, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=13, microseconds=260093), 'exception': None, 'extra': {}, 'file': (name='client.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\client.py'), 'function': 'request', 'level': (name='DEBUG', no=10, icon='🐞'), 'line': 195, 'message': 'server IP: 172.22.224.71, Port: 80', 'module': 'client', 'name': 'httprunner.client', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 9, 492024, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=13, microseconds=261090), 'exception': None, 'extra': {}, 'file': (name='client.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\client.py'), 'function': 'log_print', 'level': (name='DEBUG', no=10, icon='🐞'), 'line': 40, 'message': '\n================== request details ==================\nmethod   : GET\nurl      : http://admin.ectpp.opsmart.cn/api/common/captcha/image?d=1608298629347\nheaders  : {\n    "User-Agent": "python-requests/2.24.0",\n    "Accept-Encoding": "gzip, deflate",\n    "Accept": "*/*",\n    "Connection": "keep-alive",\n    "Content-Type": "Hm_lvt_ab44aa1c4d9b7bdf57dc3212a2d9b101=1607992854; sidebarStatus=1; Hm_lpvt_ab44aa1c4d9b7bdf57dc3212a2d9b101=1608032943",\n    "HRUN-Request-ID": "HRUN-ea2657f3-c9d8-44c6-8a40-921648ab9eee-629347"\n}\ncookies  : {}\nbody     : None\n', 'module': 'client', 'name': 'httprunner.client', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 9, 493021, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=13, microseconds=264063), 'exception': None, 'extra': {}, 'file': (name='client.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\client.py'), 'function': 'log_print', 'level': (name='DEBUG', no=10, icon='🐞'), 'line': 40, 'message': '\n================== response details ==================\nstatus_code : 200\nheaders  : {\n    "Server": "nginx",\n    "Date": "Fri, 18 Dec 2020 13:37:09 GMT",\n    "Content-Type": "image/png",\n    "Transfer-Encoding": "chunked",\n    "Connection": "keep-alive",\n    "X-Request-ID": "a2259296d2d84f35b4d26120467c30ec",\n    "X-Protected-By": "OpenRASP",\n    "Expires": "Thu, 01 Jan 1970 00:00:00 GMT",\n    "Cache-Control": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0",\n    "Pragma": "no-cache",\n    "Set-Cookie": "ECTIMGCAPTCHA=93cab8d9-d95f-4ae9-af12-cc21e7ba8c9c; Max-Age=1800; Expires=Fri, 18-Dec-2020 14:07:09 GMT; Path=/",\n    "X-Content-Type-Options": "nosniff",\n    "X-XSS-Protection": "1; mode=block",\n    "X-Frame-Options": "DENY"\n}\ncookies  : {\n    "ECTIMGCAPTCHA": "93cab8d9-d95f-4ae9-af12-cc21e7ba8c9c"\n}\nencoding : None\ncontent_type : image/png\nbody     : b\'\\x89PNG\\r\\n\\x1a\\n\\x00\\x00\\x00\\rIHDR\\x00\\x00\\x00\\x96\\x00\\x00\\x00(\\x08\\x02\\x00\\x00\\x00\\x93\\xa3\\x94\\xb0\\x00\\x00\\x03YIDATx\\xda\\xed\\xdbAk\\x151\\x10\\x00\\xe0\\xf7\\xdf<\\x16\\x8a"\\x14\\xb4(\\x88\\xa7^\\xea\\xd5C\\xaf\\x8az\\x12DA}-O\\xa5\\xf4TA\\xc1\\x83\\\'\\xf5X\\x94\\xe2\\xc1\\xebSD^\\xe9\\xa5?\\xc0S;00\\x0c3\\xd9\\xec$\\x9bd\\xf3\\xfa2\\x0ce\\x9b\\xcd{,\\xfb\\x91\\xec$\\xdbN\\xce[,yL\\xda-h\\x84-\\x1aa\\x8bF\\xd8\\x08[4\\xc2\\x16\\x8d\\xb0E#\\\\\\xc5\\xf8\\xf6\\xf5=f#L\\x1c\\xa7G\\x1fEf\\xf2\\xb3\\x8e\\xc2\\xa7\\xaf^Zr\\xf85=\\xb9\\xb3\\xa93\\xf4K\\xeen\\xdf\\xe7\\x99\\xbc\\xcf\\xdbw7\\xfd\\xf9\\xfa\\xd9\\x15\\\'j\\xef\\x95\\xdf\\xda\\x99\\x89\\xf4t[\\xdbz\\xc4\\xfb\\xa4!\\x8c\\x86t\\xcaE[\\xc2\\xed\\xde\\xbc\\xbdE\\x19G(:\\xd8\\t\\xc1\\x8f\\x8eC\\x15\\xed\\x84\\xe4W\\x05\\xa1\\xd1\\xcf\\xae\\x08l\\xfc\\xd6/\\x8e\\x8e\\xed<\\x16\\xe3\\xe7\\x8f\\xaf\\xf2\\xd4~\\x0f\\x1e\\xaea\\x86*jB\\xa7b0a\\x90_\\xa8\\xa2\\x1fl\\xfb\\xc65L;!\\x80\\xe9\\xbb/\\x14\\x87\\x10\\n3Hj\\x01?\\x92\\xc3\\x84\\xe3\\xdd\\xbd\\xefFE\\xa7\\x9f&\\x14\\xb3h\\x0c\\xa1\\xc58\\xda\\x8fN\\xcd\\x16sHaiQ\\xd4\\x84b r\\x95.\\xc2.\\xbf_\\x07\\x7f\\x84\\x1f\\xb5\\xc3O\\xd4\\xd2\\x1d\\x84b\\x12BR4\\x953\\x16\\x9e\\x08B\\xbf\\x9f\\xb3\\\'*\\x8eE\\x88NNB<\\x9b\\x89P(\\xf2vP\\x1c\\x8d\\xd0\\xff\\x90\\xcbG(T\\x9c\\x84\\x9e!\\xe8!\\x04\\\'\\xb4qv\\xe0\\x8a\\t\\t!M\\xeb\\xc2\\x1c\\x13\\xa9\\xddOt\\x06\\xc5\\xd0r\\x86\\x17\\xa5\\xb9\\t=gC\\ty\\x8b\\xbf[\\xcf(,\\xe0\\x97\\x9cP,*4\\x98\\xb1E\\xd0\\xea\\x07!O\\xacb\\xf8\\x8a\\xc2Ih\\xf7s\\x12zF\\xa7\\x950\\xb4\\x1c\\xfdq\\xf8\\x19\\xd2>\\x04\\x93\\x10vIh\\x98\\xe4\\x84\\xa4(\\xae\\x07\\t=+\\n?\\xa1\\xb3%\\x17\\xa1\\xf0\\x13\\x07#\\x12:a<}\\x9ce\\x8e^Q\\xd0\\xba\\x82\\xaf%\\xb4"=)\\x83\\x08\\xf5@\\xccK(>(\\xd8\\xf8\\xaf\\xe3\\x12v\\xf5\\xb4l\\xd9\\xf0U\\xa0^\\x17\\nEH\\xdc\\x1d\\xed\\xf5\\x1b\\x9f\\xd0\\xf9\\xc1hB\\xa1\\x18\\xe1\\x17GhY\\xef\\x93\\x19&L\\xadX\\xe3\\xd0P\\xeb-GK\\x13\\x0e\\xd99\\xab\\x8a0h/\\xd4\\xef\\xd7\\xb5\\xff\\x89!vg\\x00o\\x88\\x9f}\\xa5\\x91\\x85\\xd0\\xfe,\\xecR\\xd4\\xbb3\\xd1/+\\x8a\\x11\\xd2\\x8c\\x8ai\\xbcZ\\xe3v\\xcc\\x08\\x84\\x96\\x8a\\xf4\\xde\\xfa\\x06\\xe6\\xfe\\x973H\\xd1G\\xec\\x91\\x0e$\\x1c\\xd8\\xb3\\x97P\\x979\\x97\\x81\\xd0\\xbf4\\x0491\\x1cuK\\xdc[\\xc3\\x02\\x84\\xbdi\\xbf\\xdae%\\xec\\xd2r\\xb6\\x0f|\\xeb\\xdb\\xa5\\xe2\\xe99}\\xf1\\x89rY\\t\\xf3\\xf9a\\xc0\\xb4i!\\x8c\\xfb\\xf2\\x81\\x84\\xc4F\\x9cc\\xf9\\xd9_\\x05\\x8fC\\xe8\\xacn8a\\xf4\\x97G\\x13j\\xbf\\xb3\\xff\\\'\\x90\\xbbo\\xae\\xa7\\x95+AX x\\xfd\\x82\\xa1g\\xd1\\xf2WE\\x84\\x8b\\x7f?\\x01\\x0f~BB#\\x1c\\x9fW\\x1c\\xa3\\xfd\\x05\\x1b\\x16\\xa2\\x94\\x96Uc\\x19B`\\xc3!\\xc89W\\x9dp~2\\xd5\\x19\\xfa*\\xaaL\\x08?B\\xc5\\x96\\xd9\\x87c\\xcaU!\\xf4h9O\\xd5@\\x883\\\'\\xafH\\x91P\\xb0\\xd5\\xa38\\xc9\\xea\\x97\\xa4O\\xe1!\\xc8G\\xa1\\x1f\\xac\\x12\\xc5FX\\x1d\\xe1\\xef\\xe9>e#LFXl"\\x15l\\x16\\xc5\\xba\\x9e\\x85\\x95\\x10\\nE\\\\`\\x94)g\\xaa#\\x0c\\xadH\\x87\\xc4\\xdf\\xf9\\x1e\\xcf\\x1c\\x84\\xb9\\xc3\\t\\xd6\\xabxI\\xfe\\xb3I\\x9bE(\\n\\\'\\xdc\\x9dA\\xcb\\x9a\\t/\\x00S6\\xb7\\x1cenJ\\x0b\\x00\\x00\\x00\\x00IEND\\xaeB`\\x82\'\n', 'module': 'client', 'name': 'httprunner.client', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 9, 495994, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=13, microseconds=265096), 'exception': None, 'extra': {}, 'file': (name='client.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\client.py'), 'function': 'request', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 219, 'message': 'status_code: 200, response_time(ms): 143.75 ms, response_length: 0 bytes', 'module': 'client', 'name': 'httprunner.client', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 9, 497027, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=13, microseconds=270083), 'exception': None, 'extra': {}, 'file': (name='response.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\response.py'), 'function': 'extract', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 176, 'message': "extract mapping: {'returnAdminCookie': '93cab8d9-d95f-4ae9-af12-cc21e7ba8c9c'}", 'module': 'response', 'name': 'httprunner.response', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 9, 502014, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=13, microseconds=271078), 'exception': None, 'extra': {}, 'file': (name='response.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\response.py'), 'function': 'validate', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 246, 'message': 'assert status_code equal 200(int)\t==> pass', 'module': 'response', 'name': 'httprunner.response', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 9, 503009, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=13, microseconds=271078), 'exception': None, 'extra': {}, 'file': (name='runner.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\runner.py'), 'function': '__run_step', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 304, 'message': 'run step end: get admin login captcha <<<<<<\n', 'module': 'runner', 'name': 'httprunner.runner', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 9, 503009, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=13, microseconds=273073), 'exception': None, 'extra': {}, 'file': (name='runner.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\runner.py'), 'function': '__run_step', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 292, 'message': 'run step begin: admin login >>>>>>', 'module': 'runner', 'name': 'httprunner.runner', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 9, 505004, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=13, microseconds=510626), 'exception': None, 'extra': {}, 'file': (name='client.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\client.py'), 'function': 'request', 'level': (name='DEBUG', no=10, icon='🐞'), 'line': 187, 'message': 'client IP: 10.222.145.201, Port: 64130', 'module': 'client', 'name': 'httprunner.client', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 9, 742557, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=13, microseconds=511616), 'exception': None, 'extra': {}, 'file': (name='client.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\client.py'), 'function': 'request', 'level': (name='DEBUG', no=10, icon='🐞'), 'line': 195, 'message': 'server IP: 172.22.224.71, Port: 80', 'module': 'client', 'name': 'httprunner.client', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 9, 743547, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=13, microseconds=512613), 'exception': None, 'extra': {}, 'file': (name='client.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\client.py'), 'function': 'log_print', 'level': (name='DEBUG', no=10, icon='🐞'), 'line': 40, 'message': '\n================== request details ==================\nmethod   : POST\nurl      : http://admin.ectpp.opsmart.cn/api/admin/internal/user/login?username=pogba.ye&password=Change_name22\nheaders  : {\n    "User-Agent": "python-requests/2.24.0",\n    "Accept-Encoding": "gzip, deflate",\n    "Accept": "*/*",\n    "Connection": "keep-alive",\n    "ECTIMGCAPTCHA": "93cab8d9-d95f-4ae9-af12-cc21e7ba8c9c",\n    "Content-Type": "application/json;charset=UTF-8",\n    "HRUN-Request-ID": "HRUN-ea2657f3-c9d8-44c6-8a40-921648ab9eee-629505",\n    "Cookie": "ECTIMGCAPTCHA=93cab8d9-d95f-4ae9-af12-cc21e7ba8c9c",\n    "Content-Length": "0"\n}\ncookies  : {\n    "ECTIMGCAPTCHA": "93cab8d9-d95f-4ae9-af12-cc21e7ba8c9c"\n}\nbody     : None\n', 'module': 'client', 'name': 'httprunner.client', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 9, 744544, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=13, microseconds=513610), 'exception': None, 'extra': {}, 'file': (name='client.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\client.py'), 'function': 'log_print', 'level': (name='DEBUG', no=10, icon='🐞'), 'line': 40, 'message': '\n================== response details ==================\nstatus_code : 200\nheaders  : {\n    "Server": "nginx",\n    "Date": "Fri, 18 Dec 2020 13:37:09 GMT",\n    "Content-Length": "15",\n    "Connection": "keep-alive",\n    "X-Request-ID": "d86cc9947986493882c92c5b174f00ec",\n    "X-Protected-By": "OpenRASP",\n    "X-Content-Type-Options": "nosniff",\n    "X-XSS-Protection": "1; mode=block",\n    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",\n    "Pragma": "no-cache",\n    "Expires": "0",\n    "X-Frame-Options": "DENY",\n    "X-Auth-Token": "de5b91f5-bd62-45bf-a10b-cf6073e7a63f"\n}\ncookies  : {}\nencoding : None\ncontent_type : \nbody     : login success!\n\n', 'module': 'client', 'name': 'httprunner.client', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 9, 745541, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=13, microseconds=513610), 'exception': None, 'extra': {}, 'file': (name='client.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\client.py'), 'function': 'request', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 219, 'message': 'status_code: 200, response_time(ms): 237.55 ms, response_length: 0 bytes', 'module': 'client', 'name': 'httprunner.client', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 9, 745541, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=13, microseconds=514645), 'exception': None, 'extra': {}, 'file': (name='response.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\response.py'), 'function': 'extract', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 176, 'message': "extract mapping: {'cnAdminUserToken': 'de5b91f5-bd62-45bf-a10b-cf6073e7a63f'}", 'module': 'response', 'name': 'httprunner.response', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 9, 746576, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=13, microseconds=514645), 'exception': None, 'extra': {}, 'file': (name='response.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\response.py'), 'function': 'validate', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 246, 'message': 'assert status_code equal 200(int)\t==> pass', 'module': 'response', 'name': 'httprunner.response', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 9, 746576, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=13, microseconds=515633), 'exception': None, 'extra': {}, 'file': (name='runner.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\runner.py'), 'function': '__run_step', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 304, 'message': 'run step end: admin login <<<<<<\n', 'module': 'runner', 'name': 'httprunner.runner', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 9, 747564, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=13, microseconds=516630), 'exception': None, 'extra': {}, 'file': (name='runner.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\runner.py'), 'function': '__run_step', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 292, 'message': 'run step begin: admin set tenant >>>>>>', 'module': 'runner', 'name': 'httprunner.runner', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 9, 748561, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=13, microseconds=607636), 'exception': None, 'extra': {}, 'file': (name='client.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\client.py'), 'function': 'request', 'level': (name='DEBUG', no=10, icon='🐞'), 'line': 187, 'message': 'client IP: 10.222.145.201, Port: 64130', 'module': 'client', 'name': 'httprunner.client', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 9, 839567, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=13, microseconds=608634), 'exception': None, 'extra': {}, 'file': (name='client.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\client.py'), 'function': 'request', 'level': (name='DEBUG', no=10, icon='🐞'), 'line': 195, 'message': 'server IP: 172.22.224.71, Port: 80', 'module': 'client', 'name': 'httprunner.client', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 9, 840565, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=13, microseconds=608634), 'exception': None, 'extra': {}, 'file': (name='client.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\client.py'), 'function': 'log_print', 'level': (name='DEBUG', no=10, icon='🐞'), 'line': 40, 'message': '\n================== request details ==================\nmethod   : PUT\nurl      : http://admin.ectpp.opsmart.cn/api/admin/internal/user/update-internal-shared-user-by-tenant/a63727e57aaa2660e0539fe716acc5ab\nheaders  : {\n    "User-Agent": "python-requests/2.24.0",\n    "Accept-Encoding": "gzip, deflate",\n    "Accept": "*/*",\n    "Connection": "keep-alive",\n    "X-Auth-Token": "de5b91f5-bd62-45bf-a10b-cf6073e7a63f",\n    "Content-Type": "application/json;charset=UTF-8",\n    "HRUN-Request-ID": "HRUN-ea2657f3-c9d8-44c6-8a40-921648ab9eee-629749",\n    "Cookie": "ECTIMGCAPTCHA=93cab8d9-d95f-4ae9-af12-cc21e7ba8c9c",\n    "Content-Length": "0"\n}\ncookies  : {\n    "ECTIMGCAPTCHA": "93cab8d9-d95f-4ae9-af12-cc21e7ba8c9c"\n}\nbody     : None\n', 'module': 'client', 'name': 'httprunner.client', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 9, 840565, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=13, microseconds=609631), 'exception': None, 'extra': {}, 'file': (name='client.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\client.py'), 'function': 'log_print', 'level': (name='DEBUG', no=10, icon='🐞'), 'line': 40, 'message': '\n================== response details ==================\nstatus_code : 200\nheaders  : {\n    "Server": "nginx",\n    "Date": "Fri, 18 Dec 2020 13:37:09 GMT",\n    "Content-Length": "0",\n    "Connection": "keep-alive",\n    "X-Request-ID": "2397d6a8b09348b88168469cb9141c66",\n    "X-Protected-By": "OpenRASP",\n    "X-Content-Type-Options": "nosniff",\n    "X-XSS-Protection": "1; mode=block",\n    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",\n    "Pragma": "no-cache",\n    "Expires": "0",\n    "X-Frame-Options": "DENY"\n}\ncookies  : {}\nencoding : None\ncontent_type : \nbody     : \n', 'module': 'client', 'name': 'httprunner.client', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 9, 841562, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=13, microseconds=610660), 'exception': None, 'extra': {}, 'file': (name='client.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\client.py'), 'function': 'request', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 219, 'message': 'status_code: 200, response_time(ms): 90.01 ms, response_length: 0 bytes', 'module': 'client', 'name': 'httprunner.client', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 9, 842591, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=13, microseconds=610660), 'exception': None, 'extra': {}, 'file': (name='response.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\response.py'), 'function': 'validate', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 246, 'message': 'assert status_code equal 200(int)\t==> pass', 'module': 'response', 'name': 'httprunner.response', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 9, 842591, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=13, microseconds=611654), 'exception': None, 'extra': {}, 'file': (name='runner.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\runner.py'), 'function': '__run_step', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 304, 'message': 'run step end: admin set tenant <<<<<<\n', 'module': 'runner', 'name': 'httprunner.runner', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 9, 843585, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=13, microseconds=612652), 'exception': None, 'extra': {}, 'file': (name='runner.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\runner.py'), 'function': '__run_step_testcase', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 286, 'message': "export variables: {'cnAdminUserToken': 'de5b91f5-bd62-45bf-a10b-cf6073e7a63f'}", 'module': 'runner', 'name': 'httprunner.runner', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 9, 844583, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=13, microseconds=612652), 'exception': None, 'extra': {}, 'file': (name='runner.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\runner.py'), 'function': '__run_step', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 304, 'message': 'run step end: login <<<<<<\n', 'module': 'runner', 'name': 'httprunner.runner', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 9, 844583, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=13, microseconds=613651), 'exception': None, 'extra': {}, 'file': (name='runner.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\runner.py'), 'function': '__run_step', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 292, 'message': 'run step begin: admin create price template >>>>>>', 'module': 'runner', 'name': 'httprunner.runner', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 9, 845582, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=13, microseconds=824075), 'exception': None, 'extra': {}, 'file': (name='client.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\client.py'), 'function': 'request', 'level': (name='DEBUG', no=10, icon='🐞'), 'line': 187, 'message': 'client IP: 10.222.145.201, Port: 64131', 'module': 'client', 'name': 'httprunner.client', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 10, 56006, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=13, microseconds=825069), 'exception': None, 'extra': {}, 'file': (name='client.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\client.py'), 'function': 'request', 'level': (name='DEBUG', no=10, icon='🐞'), 'line': 195, 'message': 'server IP: 172.22.224.71, Port: 80', 'module': 'client', 'name': 'httprunner.client', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 10, 57000, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=13, microseconds=826066), 'exception': None, 'extra': {}, 'file': (name='client.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\client.py'), 'function': 'log_print', 'level': (name='DEBUG', no=10, icon='🐞'), 'line': 40, 'message': '\n================== request details ==================\nmethod   : POST\nurl      : http://mall.ectpp.opsmart.cn/api/product/sailing/pricing-draft/GENERAL\nheaders  : {\n    "User-Agent": "python-requests/2.24.0",\n    "Accept-Encoding": "gzip, deflate",\n    "Accept": "*/*",\n    "Connection": "keep-alive",\n    "X-Auth-Token": "de5b91f5-bd62-45bf-a10b-cf6073e7a63f",\n    "Content-Type": "application/json;charset=UTF-8",\n    "HRUN-Request-ID": "HRUN-ea2657f3-c9d8-44c6-8a40-921648ab9eee-629845",\n    "Content-Length": "1214"\n}\ncookies  : {\n    "ECTIMGCAPTCHA": "93cab8d9-d95f-4ae9-af12-cc21e7ba8c9c"\n}\nbody     : {\n    "porName": "Shanghai",\n    "porId": "738872886232873",\n    "haulageType": "CY-CY",\n    "obHaulageType": "CY",\n    "ibHaulageType": "CY",\n    "currency": "USD",\n    "tradeLaneCode": "AAW",\n    "serviceCode": "PMX",\n    "porCityId": "738872886232873",\n    "porCityName": "Shanghai",\n    "fndCityName": "Karachi",\n    "fndCityId": "738872886233842",\n    "commodityCode": "automation\\u8fd0\\u4ef7\\u6a21\\u677f",\n    "effectiveStartDate": "2020-12-18T00:00:00.000Z",\n    "effectiveEndDate": "2021-01-15T23:59:59.000Z",\n    "cargoDirectionAndPricingTag": "DEFAULT + DEFAULT",\n    "cargoDirection": "DEFAULT",\n    "pricingTag": "DEFAULT",\n    "prodType": "IP",\n    "paymentTerms": "PC",\n    "channelCode": "GENERAL",\n    "cargoType": "GENERAL",\n    "routePricingCntrDraftList": [\n        {\n            "oceanFee": 0,\n            "transferFee": 0,\n            "isNew": true,\n            "cntrType": "20GP",\n            "value": "20GP",\n            "label": "20GP",\n            "cntrTypeOptions": [\n                {\n                    "label": "20GP",\n                    "value": "20GP"\n                }\n            ],\n            "price": "111"\n        },\n        {\n            "oceanFee": 0,\n            "transferFee": 0,\n            "isNew": true,\n            "cntrType": "40GP",\n            "value": "40GP",\n            "label": "40GP",\n            "cntrTypeOptions": [\n                {\n                    "label": "40GP",\n                    "value": "40GP"\n                }\n            ],\n            "price": "222"\n        },\n        {\n            "oceanFee": 0,\n            "transferFee": 0,\n            "isNew": true,\n            "cntrType": "40HQ",\n            "value": "40HQ",\n            "label": "40HQ",\n            "cntrTypeOptions": [\n                {\n                    "label": "40HQ",\n                    "value": "40HQ"\n                }\n            ],\n            "price": "333"\n        }\n    ]\n}\n', 'module': 'client', 'name': 'httprunner.client', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 10, 57997, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=13, microseconds=827092), 'exception': None, 'extra': {}, 'file': (name='client.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\client.py'), 'function': 'log_print', 'level': (name='DEBUG', no=10, icon='🐞'), 'line': 40, 'message': '\n================== response details ==================\nstatus_code : 200\nheaders  : {\n    "Server": "nginx",\n    "Date": "Fri, 18 Dec 2020 13:37:09 GMT",\n    "Content-Length": "0",\n    "Connection": "keep-alive",\n    "X-Request-ID": "2edf4e10573340ff8568e26000dfd540",\n    "X-Protected-By": "OpenRASP",\n    "X-Content-Type-Options": "nosniff",\n    "X-XSS-Protection": "1; mode=block",\n    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",\n    "Pragma": "no-cache",\n    "Expires": "0",\n    "X-Frame-Options": "DENY"\n}\ncookies  : {}\nencoding : None\ncontent_type : \nbody     : \n', 'module': 'client', 'name': 'httprunner.client', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 10, 59023, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=13, microseconds=827092), 'exception': None, 'extra': {}, 'file': (name='client.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\client.py'), 'function': 'request', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 219, 'message': 'status_code: 200, response_time(ms): 210.42 ms, response_length: 0 bytes', 'module': 'client', 'name': 'httprunner.client', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 10, 59023, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=13, microseconds=828090), 'exception': None, 'extra': {}, 'file': (name='runner.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\runner.py'), 'function': '__call_hooks', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 112, 'message': 'call hook actions: teardown request', 'module': 'runner', 'name': 'httprunner.runner', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 10, 60021, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=13, microseconds=828090), 'exception': None, 'extra': {}, 'file': (name='runner.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\runner.py'), 'function': '__call_hooks', 'level': (name='DEBUG', no=10, icon='🐞'), 'line': 121, 'message': 'call hook function: ${sleepTime(2)}', 'module': 'runner', 'name': 'httprunner.runner', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 10, 60021, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=15, microseconds=829883), 'exception': None, 'extra': {}, 'file': (name='response.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\response.py'), 'function': 'validate', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 246, 'message': 'assert status_code equal 200(int)\t==> pass', 'module': 'response', 'name': 'httprunner.response', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 12, 61814, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=15, microseconds=830621), 'exception': None, 'extra': {}, 'file': (name='runner.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\runner.py'), 'function': '__run_step', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 304, 'message': 'run step end: admin create price template <<<<<<\n', 'module': 'runner', 'name': 'httprunner.runner', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 12, 62552, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=15, microseconds=831618), 'exception': None, 'extra': {}, 'file': (name='runner.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\runner.py'), 'function': '__run_step', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 292, 'message': 'run step begin: search last step create successful and get template id >>>>>>', 'module': 'runner', 'name': 'httprunner.runner', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 12, 63549, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=15, microseconds=906481), 'exception': None, 'extra': {}, 'file': (name='client.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\client.py'), 'function': 'request', 'level': (name='DEBUG', no=10, icon='🐞'), 'line': 187, 'message': 'client IP: 10.222.145.201, Port: 64131', 'module': 'client', 'name': 'httprunner.client', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 12, 138412, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=15, microseconds=907478), 'exception': None, 'extra': {}, 'file': (name='client.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\client.py'), 'function': 'request', 'level': (name='DEBUG', no=10, icon='🐞'), 'line': 195, 'message': 'server IP: 172.22.224.71, Port: 80', 'module': 'client', 'name': 'httprunner.client', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 12, 139409, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=15, microseconds=908475), 'exception': None, 'extra': {}, 'file': (name='client.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\client.py'), 'function': 'log_print', 'level': (name='DEBUG', no=10, icon='🐞'), 'line': 40, 'message': '\n================== request details ==================\nmethod   : POST\nurl      : http://mall.ectpp.opsmart.cn/api/product/sailing/pricing-draft/GENERAL/search\nheaders  : {\n    "User-Agent": "python-requests/2.24.0",\n    "Accept-Encoding": "gzip, deflate",\n    "Accept": "*/*",\n    "Connection": "keep-alive",\n    "X-Auth-Token": "de5b91f5-bd62-45bf-a10b-cf6073e7a63f",\n    "Content-Type": "application/json;charset=UTF-8",\n    "HRUN-Request-ID": "HRUN-ea2657f3-c9d8-44c6-8a40-921648ab9eee-632063",\n    "Content-Length": "371"\n}\ncookies  : {\n    "ECTIMGCAPTCHA": "93cab8d9-d95f-4ae9-af12-cc21e7ba8c9c"\n}\nbody     : {\n    "serviceCode": "PMX",\n    "fndCityName": "Karachi",\n    "fndCityId": "738872886233842",\n    "status": "NEW",\n    "updateBy": "pogba.ye",\n    "sortBy": "updateTime",\n    "direction": "descending",\n    "porTransferGroupId": "",\n    "prodTypes": [],\n    "paymentTerms": [],\n    "channelCode": "GENERAL",\n    "page": 1,\n    "size": 20,\n    "commodityCode": "automation\\u8fd0\\u4ef7\\u6a21\\u677f",\n    "porCityId": "738872886232873"\n}\n', 'module': 'client', 'name': 'httprunner.client', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 12, 140406, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=15, microseconds=909473), 'exception': None, 'extra': {}, 'file': (name='client.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\client.py'), 'function': 'log_print', 'level': (name='DEBUG', no=10, icon='🐞'), 'line': 40, 'message': '\n================== response details ==================\nstatus_code : 200\nheaders  : {\n    "Server": "nginx",\n    "Date": "Fri, 18 Dec 2020 13:37:11 GMT",\n    "Content-Type": "application/json;charset=UTF-8",\n    "Transfer-Encoding": "chunked",\n    "Connection": "keep-alive",\n    "Vary": "Accept-Encoding",\n    "X-Request-ID": "7d0d91e63103468b84acfa23caf081e4",\n    "X-Protected-By": "OpenRASP",\n    "X-Content-Type-Options": "nosniff",\n    "X-XSS-Protection": "1; mode=block",\n    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",\n    "Pragma": "no-cache",\n    "Expires": "0",\n    "X-Frame-Options": "DENY",\n    "Content-Encoding": "gzip"\n}\ncookies  : {}\nencoding : UTF-8\ncontent_type : application/json;charset=UTF-8\nbody     : {\n    "content": [\n        {\n            "uuid": "8aaa5ce77674b888017676118aa60b34",\n            "porCityId": "738872886232873",\n            "fndCityId": "738872886233842",\n            "porCityName": "Shanghai",\n            "fndCityName": "Karachi",\n            "serviceCode": "PMX",\n            "effectiveStartDate": "2020-12-18T00:00:00.000Z",\n            "effectiveEndDate": "2021-01-15T23:59:59.000Z",\n            "haulageType": "CY-CY",\n            "status": "NEW",\n            "docId": null,\n            "updateBy": "pogba.ye",\n            "updateTime": "2020-12-18T13:37:09.797Z",\n            "tradeLaneCode": "AAW",\n            "tradeGroup": "73a12d5ca3fe43d38cdb294d8d291531",\n            "tradeArea": "LATD",\n            "porFacilityCode": null,\n            "fndFacilityCode": null,\n            "porTransferGroupId": null,\n            "porTransferGroupName": null,\n            "polId": null,\n            "polName": null,\n            "podId": null,\n            "podName": null,\n            "commodityCode": "automation\\u8fd0\\u4ef7\\u6a21\\u677f",\n            "polTsMode": null,\n            "podTsMode": null,\n            "currency": "USD",\n            "channelCode": "GENERAL",\n            "paymentTerms": "PC",\n            "pricingTag": "DEFAULT",\n            "cargoDirection": "DEFAULT",\n            "prodType": "IP",\n            "cargoType": "GENERAL",\n            "routePricingCntrDraftList": [\n                {\n                    "uuid": "8aaa5ce77674b888017676118aa60b35",\n                    "cntrType": "20GP",\n                    "price": 111,\n                    "currency": "USD"\n                },\n                {\n                    "uuid": "8aaa5ce77674b888017676118aa60b36",\n                    "cntrType": "40GP",\n                    "price": 222,\n                    "currency": "USD"\n                },\n                {\n                    "uuid": "8aaa5ce77674b888017676118aa60b37",\n                    "cntrType": "40HQ",\n                    "price": 333,\n                    "currency": "USD"\n                }\n            ],\n            "resultSummaryMap": null,\n            "outBoundHaulage": "CY",\n            "inBoundHaulage": "CY",\n            "groupingKeyForBindSvvd": "PMX_738872886232873_null_738872886233842"\n        }\n    ],\n    "pageable": {\n        "sort": {\n            "sorted": true,\n            "unsorted": false,\n            "empty": false\n        },\n        "pageSize": 20,\n        "pageNumber": 0,\n        "offset": 0,\n        "paged": true,\n        "unpaged": false\n    },\n    "totalElements": 1,\n    "totalPages": 1,\n    "last": true,\n    "first": true,\n    "sort": {\n        "sorted": true,\n        "unsorted": false,\n        "empty": false\n    },\n    "numberOfElements": 1,\n    "size": 20,\n    "number": 0,\n    "empty": false\n}\n', 'module': 'client', 'name': 'httprunner.client', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 12, 141404, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=15, microseconds=910470), 'exception': None, 'extra': {}, 'file': (name='client.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\client.py'), 'function': 'request', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 219, 'message': 'status_code: 200, response_time(ms): 74.86 ms, response_length: 0 bytes', 'module': 'client', 'name': 'httprunner.client', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 12, 142401, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=15, microseconds=910470), 'exception': None, 'extra': {}, 'file': (name='response.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\response.py'), 'function': 'extract', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 176, 'message': "extract mapping: {'priceTemplateId': '8aaa5ce77674b888017676118aa60b34'}", 'module': 'response', 'name': 'httprunner.response', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 12, 142401, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=15, microseconds=911498), 'exception': None, 'extra': {}, 'file': (name='response.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\response.py'), 'function': 'validate', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 246, 'message': 'assert status_code equal 200(int)\t==> pass', 'module': 'response', 'name': 'httprunner.response', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 12, 143429, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=15, microseconds=911498), 'exception': None, 'extra': {}, 'file': (name='response.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\response.py'), 'function': 'validate', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 246, 'message': 'assert body.totalElements equal 1(int)\t==> pass', 'module': 'response', 'name': 'httprunner.response', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 12, 143429, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=15, microseconds=912497), 'exception': None, 'extra': {}, 'file': (name='runner.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\runner.py'), 'function': '__run_step', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 304, 'message': 'run step end: search last step create successful and get template id <<<<<<\n', 'module': 'runner', 'name': 'httprunner.runner', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 12, 144428, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=15, microseconds=913492), 'exception': None, 'extra': {}, 'file': (name='runner.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\runner.py'), 'function': '__run_step', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 292, 'message': 'run step begin: price template page bind product >>>>>>', 'module': 'runner', 'name': 'httprunner.runner', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 12, 145423, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=16, microseconds=34936), 'exception': None, 'extra': {}, 'file': (name='client.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\client.py'), 'function': 'request', 'level': (name='DEBUG', no=10, icon='🐞'), 'line': 187, 'message': 'client IP: 10.222.145.201, Port: 64131', 'module': 'client', 'name': 'httprunner.client', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 12, 266867, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=16, microseconds=35962), 'exception': None, 'extra': {}, 'file': (name='client.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\client.py'), 'function': 'request', 'level': (name='DEBUG', no=10, icon='🐞'), 'line': 195, 'message': 'server IP: 172.22.224.71, Port: 80', 'module': 'client', 'name': 'httprunner.client', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 12, 267893, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=16, microseconds=36956), 'exception': None, 'extra': {}, 'file': (name='client.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\client.py'), 'function': 'log_print', 'level': (name='DEBUG', no=10, icon='🐞'), 'line': 40, 'message': '\n================== request details ==================\nmethod   : POST\nurl      : http://mall.ectpp.opsmart.cn/api/product/sailing/product/GENERAL/bindSvvd\nheaders  : {\n    "User-Agent": "python-requests/2.24.0",\n    "Accept-Encoding": "gzip, deflate",\n    "Accept": "*/*",\n    "Connection": "keep-alive",\n    "X-Auth-Token": "de5b91f5-bd62-45bf-a10b-cf6073e7a63f",\n    "Content-Type": "application/json;charset=UTF-8",\n    "HRUN-Request-ID": "HRUN-ea2657f3-c9d8-44c6-8a40-921648ab9eee-632145",\n    "Content-Length": "36"\n}\ncookies  : {\n    "ECTIMGCAPTCHA": "93cab8d9-d95f-4ae9-af12-cc21e7ba8c9c"\n}\nbody     : [\'8aaa5ce77674b888017676118aa60b34\']\n', 'module': 'client', 'name': 'httprunner.client', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 12, 268887, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=16, microseconds=37960), 'exception': None, 'extra': {}, 'file': (name='client.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\client.py'), 'function': 'log_print', 'level': (name='DEBUG', no=10, icon='🐞'), 'line': 40, 'message': '\n================== response details ==================\nstatus_code : 200\nheaders  : {\n    "Server": "nginx",\n    "Date": "Fri, 18 Dec 2020 13:37:12 GMT",\n    "Content-Type": "application/json;charset=UTF-8",\n    "Transfer-Encoding": "chunked",\n    "Connection": "keep-alive",\n    "Vary": "Accept-Encoding",\n    "X-Request-ID": "1069a608bd8740d0b736e29cf6c9035a",\n    "X-Protected-By": "OpenRASP",\n    "X-Content-Type-Options": "nosniff",\n    "X-XSS-Protection": "1; mode=block",\n    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",\n    "Pragma": "no-cache",\n    "Expires": "0",\n    "X-Frame-Options": "DENY",\n    "Content-Encoding": "gzip"\n}\ncookies  : {}\nencoding : UTF-8\ncontent_type : application/json;charset=UTF-8\nbody     : {\n    "taskId": "e13f283a-ec1a-45df-847a-a56c610fa8e8",\n    "taskGroup": null,\n    "status": "IN_PROGRESS",\n    "resultSummary": null,\n    "errorMessage": null,\n    "createBy": "pogba.ye",\n    "createdAt": "2020-12-18T13:37:12.011Z",\n    "lastUpdateAt": null,\n    "elapsedTime": 0,\n    "totalReq": 1\n}\n', 'module': 'client', 'name': 'httprunner.client', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 12, 269891, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=16, microseconds=38924), 'exception': None, 'extra': {}, 'file': (name='client.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\client.py'), 'function': 'request', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 219, 'message': 'status_code: 200, response_time(ms): 121.44 ms, response_length: 0 bytes', 'module': 'client', 'name': 'httprunner.client', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 12, 270855, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=16, microseconds=38924), 'exception': None, 'extra': {}, 'file': (name='runner.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\runner.py'), 'function': '__call_hooks', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 112, 'message': 'call hook actions: teardown request', 'module': 'runner', 'name': 'httprunner.runner', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 12, 270855, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=16, microseconds=39950), 'exception': None, 'extra': {}, 'file': (name='runner.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\runner.py'), 'function': '__call_hooks', 'level': (name='DEBUG', no=10, icon='🐞'), 'line': 121, 'message': 'call hook function: ${sleepTime(2)}', 'module': 'runner', 'name': 'httprunner.runner', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 12, 271881, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=18, microseconds=40795), 'exception': None, 'extra': {}, 'file': (name='response.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\response.py'), 'function': 'extract', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 176, 'message': "extract mapping: {'taskId': 'e13f283a-ec1a-45df-847a-a56c610fa8e8'}", 'module': 'response', 'name': 'httprunner.response', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 14, 272726, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=18, microseconds=40795), 'exception': None, 'extra': {}, 'file': (name='response.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\response.py'), 'function': 'validate', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 246, 'message': 'assert status_code equal 200(int)\t==> pass', 'module': 'response', 'name': 'httprunner.response', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 14, 272726, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=18, microseconds=41792), 'exception': None, 'extra': {}, 'file': (name='response.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\response.py'), 'function': 'validate', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 246, 'message': 'assert body.status equal IN_PROGRESS(str)\t==> pass', 'module': 'response', 'name': 'httprunner.response', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 14, 273723, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=18, microseconds=42789), 'exception': None, 'extra': {}, 'file': (name='response.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\response.py'), 'function': 'validate', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 246, 'message': 'assert body.totalElements not_equal 0(int)\t==> pass', 'module': 'response', 'name': 'httprunner.response', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 14, 274720, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=18, microseconds=42789), 'exception': None, 'extra': {}, 'file': (name='runner.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\runner.py'), 'function': '__run_step', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 304, 'message': 'run step end: price template page bind product <<<<<<\n', 'module': 'runner', 'name': 'httprunner.runner', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 14, 274720, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=18, microseconds=43788), 'exception': None, 'extra': {}, 'file': (name='runner.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\runner.py'), 'function': '__run_step', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 292, 'message': 'run step begin: product release page batch submit audit >>>>>>', 'module': 'runner', 'name': 'httprunner.runner', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 14, 275719, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=18, microseconds=272238), 'exception': None, 'extra': {}, 'file': (name='client.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\client.py'), 'function': 'request', 'level': (name='DEBUG', no=10, icon='🐞'), 'line': 187, 'message': 'client IP: 10.222.145.201, Port: 64131', 'module': 'client', 'name': 'httprunner.client', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 14, 504169, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=18, microseconds=272238), 'exception': None, 'extra': {}, 'file': (name='client.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\client.py'), 'function': 'request', 'level': (name='DEBUG', no=10, icon='🐞'), 'line': 195, 'message': 'server IP: 172.22.224.71, Port: 80', 'module': 'client', 'name': 'httprunner.client', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 14, 504169, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=18, microseconds=273235), 'exception': None, 'extra': {}, 'file': (name='client.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\client.py'), 'function': 'log_print', 'level': (name='DEBUG', no=10, icon='🐞'), 'line': 40, 'message': '\n================== request details ==================\nmethod   : POST\nurl      : http://mall.ectpp.opsmart.cn/api/product/sailing/product/GENERAL/request-review-product\nheaders  : {\n    "User-Agent": "python-requests/2.24.0",\n    "Accept-Encoding": "gzip, deflate",\n    "Accept": "*/*",\n    "Connection": "keep-alive",\n    "X-Auth-Token": "de5b91f5-bd62-45bf-a10b-cf6073e7a63f",\n    "Content-Type": "application/json;charset=UTF-8",\n    "HRUN-Request-ID": "HRUN-ea2657f3-c9d8-44c6-8a40-921648ab9eee-634276",\n    "Content-Length": "1433"\n}\ncookies  : {\n    "ECTIMGCAPTCHA": "93cab8d9-d95f-4ae9-af12-cc21e7ba8c9c"\n}\nbody     : {\n    "porCity": {\n        "createTime": null,\n        "createBy": null,\n        "updateTime": "2019-05-02T00:07:51Z",\n        "updateBy": "SYS",\n        "isActive": 1,\n        "id": "738872886232873",\n        "unlocode": "CNSHA",\n        "cityName": "Shanghai",\n        "cntyName": "Shanghai",\n        "stateName": "Shanghai",\n        "stateCode": "SH",\n        "ctryName": "China",\n        "ctryCode": "CN",\n        "cityFullNameEn": "Shanghai",\n        "cityFullNameCn": "\\u4e0a\\u6d77",\n        "refUuid": null,\n        "isDummy": null\n    },\n    "fndCity": {\n        "createTime": null,\n        "createBy": null,\n        "updateTime": "2019-05-02T00:09:32Z",\n        "updateBy": "SYS",\n        "isActive": 1,\n        "id": "738872886233842",\n        "unlocode": "PKKAR",\n        "cityName": "Karachi",\n        "cntyName": null,\n        "stateName": "Sindh",\n        "stateCode": null,\n        "ctryName": "Pakistan",\n        "ctryCode": "PK",\n        "cityFullNameEn": "Karachi",\n        "cityFullNameCn": "\\u5361\\u62c9\\u5947",\n        "refUuid": null,\n        "isDummy": null\n    },\n    "serviceCode": "PMX",\n    "vesselName": "",\n    "updateBy": "pogba.ye",\n    "status": "DRAFT",\n    "pageType": "RELEASE",\n    "sortedCriteria": {\n        "releaseBatchStatus": "BLANK",\n        "sortItem": "tradeLaneCode",\n        "sortOrder": "descending"\n    },\n    "targetIds": [],\n    "searchProdTypes": [],\n    "searchPaymentTerms": [],\n    "tradeLaneCode": "AAW",\n    "firstServiceCode": "",\n    "voyageNo": "",\n    "direction": "",\n    "firstPolPort": {},\n    "porFacilityCode": "",\n    "polPort": {},\n    "transitPortId": "",\n    "podPort": {},\n    "lastPodPort": {},\n    "fndFacilityCode": "",\n    "channelCode": "GENERAL",\n    "commodityCode": "automation\\u8fd0\\u4ef7\\u6a21\\u677f",\n    "notificationParam": {\n        "isTrusted": true\n    },\n    "sendEmail": false\n}\n', 'module': 'client', 'name': 'httprunner.client', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 14, 505166, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=18, microseconds=274232), 'exception': None, 'extra': {}, 'file': (name='client.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\client.py'), 'function': 'log_print', 'level': (name='DEBUG', no=10, icon='🐞'), 'line': 40, 'message': '\n================== response details ==================\nstatus_code : 200\nheaders  : {\n    "Server": "nginx",\n    "Date": "Fri, 18 Dec 2020 13:37:14 GMT",\n    "Content-Type": "text/plain;charset=UTF-8",\n    "Content-Length": "45",\n    "Connection": "keep-alive",\n    "X-Request-ID": "6c46981c8c3d4aa5b2fdf0d4287f063d",\n    "X-Protected-By": "OpenRASP",\n    "X-Content-Type-Options": "nosniff",\n    "X-XSS-Protection": "1; mode=block",\n    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",\n    "Pragma": "no-cache",\n    "Expires": "0",\n    "X-Frame-Options": "DENY"\n}\ncookies  : {}\nencoding : UTF-8\ncontent_type : text/plain;charset=UTF-8\nbody     : {\n    "businessKey": "pogba.ye-20201218213714118"\n}\n', 'module': 'client', 'name': 'httprunner.client', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 14, 506163, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=18, microseconds=275229), 'exception': None, 'extra': {}, 'file': (name='client.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\client.py'), 'function': 'request', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 219, 'message': 'status_code: 200, response_time(ms): 227.45 ms, response_length: 0 bytes', 'module': 'client', 'name': 'httprunner.client', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 14, 507160, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=18, microseconds=275229), 'exception': None, 'extra': {}, 'file': (name='response.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\response.py'), 'function': 'extract', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 176, 'message': "extract mapping: {'reviewBusinessKey': 'pogba.ye-20201218213714118'}", 'module': 'response', 'name': 'httprunner.response', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 14, 507160, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=18, microseconds=276226), 'exception': None, 'extra': {}, 'file': (name='response.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\response.py'), 'function': 'validate', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 246, 'message': 'assert status_code equal 200(int)\t==> pass', 'module': 'response', 'name': 'httprunner.response', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 14, 508157, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=18, microseconds=276226), 'exception': None, 'extra': {}, 'file': (name='response.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\response.py'), 'function': 'validate', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 246, 'message': 'assert body.businessKey contains pogba.ye(str)\t==> pass', 'module': 'response', 'name': 'httprunner.response', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 14, 508157, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=18, microseconds=277224), 'exception': None, 'extra': {}, 'file': (name='runner.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\runner.py'), 'function': '__run_step', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 304, 'message': 'run step end: product release page batch submit audit <<<<<<\n', 'module': 'runner', 'name': 'httprunner.runner', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 14, 509155, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=18, microseconds=277224), 'exception': None, 'extra': {}, 'file': (name='runner.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\runner.py'), 'function': '__run_step', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 292, 'message': 'run step begin: product review page get review task id >>>>>>', 'module': 'runner', 'name': 'httprunner.runner', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 14, 509155, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=18, microseconds=386828), 'exception': None, 'extra': {}, 'file': (name='client.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\client.py'), 'function': 'request', 'level': (name='DEBUG', no=10, icon='🐞'), 'line': 187, 'message': 'client IP: 10.222.145.201, Port: 64131', 'module': 'client', 'name': 'httprunner.client', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 14, 618759, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=18, microseconds=386828), 'exception': None, 'extra': {}, 'file': (name='client.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\client.py'), 'function': 'request', 'level': (name='DEBUG', no=10, icon='🐞'), 'line': 195, 'message': 'server IP: 172.22.224.71, Port: 80', 'module': 'client', 'name': 'httprunner.client', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 14, 618759, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=18, microseconds=387825), 'exception': None, 'extra': {}, 'file': (name='client.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\client.py'), 'function': 'log_print', 'level': (name='DEBUG', no=10, icon='🐞'), 'line': 40, 'message': '\n================== request details ==================\nmethod   : GET\nurl      : http://mall.ectpp.opsmart.cn/api/workflow/internal/GENERAL/task/pending\nheaders  : {\n    "User-Agent": "python-requests/2.24.0",\n    "Accept-Encoding": "gzip, deflate",\n    "Accept": "*/*",\n    "Connection": "keep-alive",\n    "X-Auth-Token": "de5b91f5-bd62-45bf-a10b-cf6073e7a63f",\n    "Content-Type": "application/json;charset=UTF-8",\n    "HRUN-Request-ID": "HRUN-ea2657f3-c9d8-44c6-8a40-921648ab9eee-634510"\n}\ncookies  : {\n    "ECTIMGCAPTCHA": "93cab8d9-d95f-4ae9-af12-cc21e7ba8c9c"\n}\nbody     : None\n', 'module': 'client', 'name': 'httprunner.client', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 14, 619756, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=18, microseconds=388823), 'exception': None, 'extra': {}, 'file': (name='client.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\client.py'), 'function': 'log_print', 'level': (name='DEBUG', no=10, icon='🐞'), 'line': 40, 'message': '\n================== response details ==================\nstatus_code : 200\nheaders  : {\n    "Server": "nginx",\n    "Date": "Fri, 18 Dec 2020 13:37:14 GMT",\n    "Content-Type": "application/json;charset=UTF-8",\n    "Transfer-Encoding": "chunked",\n    "Connection": "keep-alive",\n    "Vary": "Accept-Encoding",\n    "X-Request-ID": "89fb64010f0a4386a301c62462388ba4",\n    "X-Protected-By": "OpenRASP",\n    "X-Content-Type-Options": "nosniff",\n    "X-XSS-Protection": "1; mode=block",\n    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",\n    "Pragma": "no-cache",\n    "Expires": "0",\n    "X-Frame-Options": "DENY",\n    "Content-Encoding": "gzip"\n}\ncookies  : {}\nencoding : UTF-8\ncontent_type : application/json;charset=UTF-8\nbody     : [{\'businessKey\': \'pogba.ye-20201218213714118\', \'taskId\': \'2350cf42-4136-11eb-acc6-020882a5f7af\', \'processName\': \'SailingProductPublish\', \'params\': {\'tenantId\': \'a63727e57aaa2660e0539fe716acc5ab\', \'batchId\': \'pogba.ye-20201218213714118\'}, \'createTime\': \'2020-12-18T13:37:14.147Z\'}]\n', 'module': 'client', 'name': 'httprunner.client', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 14, 620754, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=18, microseconds=388823), 'exception': None, 'extra': {}, 'file': (name='client.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\client.py'), 'function': 'request', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 219, 'message': 'status_code: 200, response_time(ms): 107.61 ms, response_length: 0 bytes', 'module': 'client', 'name': 'httprunner.client', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 14, 620754, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=18, microseconds=389848), 'exception': None, 'extra': {}, 'file': (name='response.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\response.py'), 'function': 'extract', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 176, 'message': "extract mapping: {'reviewTaskId': '2350cf42-4136-11eb-acc6-020882a5f7af'}", 'module': 'response', 'name': 'httprunner.response', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 14, 621779, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=18, microseconds=390846), 'exception': None, 'extra': {}, 'file': (name='response.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\response.py'), 'function': 'validate', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 246, 'message': 'assert status_code equal 200(int)\t==> pass', 'module': 'response', 'name': 'httprunner.response', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 14, 622777, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=18, microseconds=390846), 'exception': None, 'extra': {}, 'file': (name='response.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\response.py'), 'function': 'validate', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 246, 'message': 'assert body[0].businessKey equal pogba.ye-20201218213714118(str)\t==> pass', 'module': 'response', 'name': 'httprunner.response', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 14, 622777, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=18, microseconds=391843), 'exception': None, 'extra': {}, 'file': (name='runner.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\runner.py'), 'function': '__run_step', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 304, 'message': 'run step end: product review page get review task id <<<<<<\n', 'module': 'runner', 'name': 'httprunner.runner', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 14, 623774, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=18, microseconds=391843), 'exception': None, 'extra': {}, 'file': (name='runner.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\runner.py'), 'function': '__run_step', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 292, 'message': 'run step begin: product review page audit success >>>>>>', 'module': 'runner', 'name': 'httprunner.runner', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 14, 623774, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=18, microseconds=937416), 'exception': None, 'extra': {}, 'file': (name='client.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\client.py'), 'function': 'request', 'level': (name='DEBUG', no=10, icon='🐞'), 'line': 187, 'message': 'client IP: 10.222.145.201, Port: 64131', 'module': 'client', 'name': 'httprunner.client', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 15, 169347, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=18, microseconds=937416), 'exception': None, 'extra': {}, 'file': (name='client.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\client.py'), 'function': 'request', 'level': (name='DEBUG', no=10, icon='🐞'), 'line': 195, 'message': 'server IP: 172.22.224.71, Port: 80', 'module': 'client', 'name': 'httprunner.client', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 15, 169347, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=18, microseconds=938414), 'exception': None, 'extra': {}, 'file': (name='client.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\client.py'), 'function': 'log_print', 'level': (name='DEBUG', no=10, icon='🐞'), 'line': 40, 'message': '\n================== request details ==================\nmethod   : POST\nurl      : http://mall.ectpp.opsmart.cn/api/workflow/internal/product/task/accept\nheaders  : {\n    "User-Agent": "python-requests/2.24.0",\n    "Accept-Encoding": "gzip, deflate",\n    "Accept": "*/*",\n    "Connection": "keep-alive",\n    "X-Auth-Token": "de5b91f5-bd62-45bf-a10b-cf6073e7a63f",\n    "Content-Type": "application/json;charset=UTF-8",\n    "HRUN-Request-ID": "HRUN-ea2657f3-c9d8-44c6-8a40-921648ab9eee-634624",\n    "Content-Length": "50"\n}\ncookies  : {\n    "ECTIMGCAPTCHA": "93cab8d9-d95f-4ae9-af12-cc21e7ba8c9c"\n}\nbody     : {\n    "taskId": "2350cf42-4136-11eb-acc6-020882a5f7af"\n}\n', 'module': 'client', 'name': 'httprunner.client', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 15, 170345, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=18, microseconds=939411), 'exception': None, 'extra': {}, 'file': (name='client.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\client.py'), 'function': 'log_print', 'level': (name='DEBUG', no=10, icon='🐞'), 'line': 40, 'message': '\n================== response details ==================\nstatus_code : 200\nheaders  : {\n    "Server": "nginx",\n    "Date": "Fri, 18 Dec 2020 13:37:14 GMT",\n    "Content-Length": "0",\n    "Connection": "keep-alive",\n    "X-Request-ID": "869ab258e94c47878ca848a5e1e57a49",\n    "X-Protected-By": "OpenRASP",\n    "X-Content-Type-Options": "nosniff",\n    "X-XSS-Protection": "1; mode=block",\n    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",\n    "Pragma": "no-cache",\n    "Expires": "0",\n    "X-Frame-Options": "DENY"\n}\ncookies  : {}\nencoding : None\ncontent_type : \nbody     : \n', 'module': 'client', 'name': 'httprunner.client', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 15, 171342, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=18, microseconds=939411), 'exception': None, 'extra': {}, 'file': (name='client.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\client.py'), 'function': 'request', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 219, 'message': 'status_code: 200, response_time(ms): 544.57 ms, response_length: 0 bytes', 'module': 'client', 'name': 'httprunner.client', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 15, 171342, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=18, microseconds=940438), 'exception': None, 'extra': {}, 'file': (name='response.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\response.py'), 'function': 'validate', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 246, 'message': 'assert status_code equal 200(int)\t==> pass', 'module': 'response', 'name': 'httprunner.response', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 15, 172369, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=18, microseconds=941434), 'exception': None, 'extra': {}, 'file': (name='runner.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\runner.py'), 'function': '__run_step', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 304, 'message': 'run step end: product review page audit success <<<<<<\n', 'module': 'runner', 'name': 'httprunner.runner', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 15, 173365, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---
+--- Logging error in Loguru Handler #0 ---
+Record was: {'elapsed': datetime.timedelta(seconds=18, microseconds=941434), 'exception': None, 'extra': {}, 'file': (name='runner.py', path='d:\\application\\python37\\lib\\site-packages\\httprunner\\runner.py'), 'function': 'test_start', 'level': (name='INFO', no=20, icon='ℹ️'), 'line': 460, 'message': 'generate testcase log: D:\\workspace\\EctRegression\\logs\\ea2657f3-c9d8-44c6-8a40-921648ab9eee.run.log', 'module': 'runner', 'name': 'httprunner.runner', 'process': (id=3036, name='MainProcess'), 'thread': (id=20032, name='MainThread'), 'time': datetime(2020, 12, 18, 21, 37, 15, 173365, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), 'China Standard Time'))}
+Traceback (most recent call last):
+  File "d:\application\python37\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\application\python37\lib\site-packages\loguru\_simple_sinks.py", line 26, in write
+    self._stream.write(message)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 187, in write_and_convert
+    self.write_plain_text(text, cursor, start)
+  File "C:\Users\yinja\AppData\Roaming\Python\Python37\site-packages\colorama\ansitowin32.py", line 196, in write_plain_text
+    self.wrapped.flush()
+OSError: [WinError 6] The handle is invalid
+--- End of logging error ---

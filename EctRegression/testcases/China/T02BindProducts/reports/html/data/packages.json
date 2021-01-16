@@ -1,0 +1,37 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "T02adminBindProductsRejectDelete_test",
+    "children" : [ {
+      "name" : "request methods testcase with functions",
+      "uid" : "c7f2df25b58f357a",
+      "parentUid" : "d635e04431e4945dc19ee16f1491d06b",
+      "status" : "broken",
+      "time" : {
+        "start" : 1608298619007,
+        "stop" : 1608298628193,
+        "duration" : 9186
+      },
+      "flaky" : true,
+      "parameters" : [ ]
+    } ],
+    "uid" : "d635e04431e4945dc19ee16f1491d06b"
+  }, {
+    "name" : "T02adminBindProducts_test",
+    "children" : [ {
+      "name" : "request methods testcase with functions",
+      "uid" : "562a9058c0ee9a6b",
+      "parentUid" : "2ab621264468f2c9b3af910a8f0a9178",
+      "status" : "passed",
+      "time" : {
+        "start" : 1608298628222,
+        "stop" : 1608298635174,
+        "duration" : 6952
+      },
+      "flaky" : true,
+      "parameters" : [ ]
+    } ],
+    "uid" : "2ab621264468f2c9b3af910a8f0a9178"
+  } ]
+}

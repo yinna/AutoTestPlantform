@@ -1,0 +1,72 @@
+
+config:
+    name: "request methods testcase with functions"
+    base_url: "http://mall.ectpp.opsmart.cn"
+    variables: 
+        companyId: ${getCompanyId(中国测试企业)}
+        subUserId: ${getUserId(cn_subuser)}
+    verify: False
+
+teststeps:
+-
+    name: login
+    testcase: testcases/China/T01setUp/T01cnClientLogin.yml
+    export:
+        - cnPrimaryUserToken
+        - cnSubUserToken
+
+-
+    name: submit associate to exist company application
+    request:
+        method: POST
+        url: /api/admin/company/apply-for-company-affiliate
+        json: {"name":"cn_subuser","companyNo":"20201202001","companyID":$companyId,"companyNameZh":"中国测试企业","companyNameEn":"chinaTestCompany","countryCode":"CN"}
+        headers:
+            X-Auth-Token: $cnSubUserToken
+            Content-Type: application/json;charset=UTF-8
+    teardown_hooks:
+        - ${sleepTime(2)}
+    validate:
+        - eq: ['status_code', 200]
+
+-
+    name: primary user search subuser associate task id
+    request:
+        method: GET
+        url: /api/workflow/company/task/pending
+        headers:
+            X-Auth-Token: $cnPrimaryUserToken
+            Content-Type: application/x-www-form-urlencoded
+    extract:
+        userTaskId: "body.0.taskId"
+    validate:
+        - eq: ['status_code', 200]
+        - eq: ['body.0.businessKey',$subUserId]
+
+-
+    name: primary user reject subuser associate
+    request:
+        method: POST
+        url: /api/workflow/company/task/reject
+        headers:
+            X-Auth-Token: $cnPrimaryUserToken
+            Content-Type: application/json;charset=UTF-8
+        json: [$userTaskId]
+    teardown_hooks:
+        - ${sleepTime(2)}
+    validate:
+        - eq: ['status_code', 200]
+
+#-
+#    name: primary user search reject success
+#    request:
+#        method: GET
+#        url: /api/admin/company/user
+#        headers:
+#            X-Auth-Token: $cnPrimaryUserToken
+#            Content-Type: application/json;charset=UTF-8
+#    extract:
+#        pendingUsersList: body.associatedUsers
+#        associatedUsersList: body.associatedUsers
+#    validate:
+#        - eq: ['status_code', 200]

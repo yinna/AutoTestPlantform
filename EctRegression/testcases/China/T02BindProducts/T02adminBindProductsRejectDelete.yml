@@ -1,0 +1,137 @@
+
+config:
+    name: "request methods testcase with functions"
+    base_url: "http://admin.ectpp.opsmart.cn"
+    variables: 
+        today: ${getCurrentDay()}
+        todayString: ${getJoinString($today,start,noneed)}
+        weekday: ${getDateAfterSomeDay(28)}
+        weekdayString: ${getJoinString($weekday,end,noneed)}
+        porCityId: ${getCityUuid(Shanghai)}
+        fndCityId: ${getCityUuid(Karachi)}
+        commodityCode: ${getJoinString($today,join,automation运价模板reject)}
+        rejectComments: ${getJoinString($today,join,automation拒绝)}
+    verify: False
+
+teststeps:
+-
+    name: login
+    # api: testcases/China/T01setUp/T02cnAdminLogin.yml  #api/testcase效果一致
+    testcase: testcases/China/T01setUp/T02cnAdminLogin.yml
+    export:
+        - cnAdminUserToken
+
+-
+    name: admin create price template
+    request:
+        method: POST
+        url: /api/product/sailing/pricing-draft/GENERAL
+        json: {"porName":"Shanghai","porId":"738872886232873","haulageType":"CY-CY","obHaulageType":"CY","ibHaulageType":"CY","currency":"USD","tradeLaneCode":"AAW","serviceCode":"PMX","porCityId":$porCityId,"porCityName":"Shanghai","fndCityName":"Karachi","fndCityId":$fndCityId,"commodityCode":$commodityCode,"effectiveStartDate":$todayString,"effectiveEndDate":$weekdayString,"cargoDirectionAndPricingTag":"DEFAULT + DEFAULT","cargoDirection":"DEFAULT","pricingTag":"DEFAULT","prodType":"IP","paymentTerms":"PC","channelCode":"GENERAL","cargoType":"GENERAL","routePricingCntrDraftList":[{"oceanFee":0,"transferFee":0,"isNew":true,"cntrType":"20GP","value":"20GP","label":"20GP","cntrTypeOptions":[{"label":"20GP","value":"20GP"}],"price":"111"},{"oceanFee":0,"transferFee":0,"isNew":true,"cntrType":"40GP","value":"40GP","label":"40GP","cntrTypeOptions":[{"label":"40GP","value":"40GP"}],"price":"222"},{"oceanFee":0,"transferFee":0,"isNew":true,"cntrType":"40HQ","value":"40HQ","label":"40HQ","cntrTypeOptions":[{"label":"40HQ","value":"40HQ"}],"price":"333"}]}
+        headers:
+            X-Auth-Token: $cnAdminUserToken
+            Content-Type: application/json;charset=UTF-8
+    teardown_hooks:
+            - ${sleepTime(2)}
+    validate:
+        - eq: ["status_code", 200]
+
+-
+    name: search last step create successful and get template id
+    request:
+        method: POST
+        url: /api/product/sailing/pricing-draft/GENERAL/search
+        json: {"serviceCode":"PMX","fndCityName":"Karachi","fndCityId":$fndCityId,"status":"NEW","updateBy":"pogba.ye","sortBy":"updateTime","direction":"descending","porTransferGroupId":"","prodTypes":[],"paymentTerms":[],"channelCode":"GENERAL","page":1,"size":20,"commodityCode":$commodityCode,"porCityId":$porCityId}
+        headers:
+            X-Auth-Token: $cnAdminUserToken
+            Content-Type: application/json;charset=UTF-8
+    extract:
+        priceTemplateId: "body.content.0.uuid"
+    validate:
+        - eq: ['status_code', 200]
+        - eq: ['body.totalElements', 1]
+
+-
+    name: price template page bind product
+    request:
+        method: POST
+        url: /api/product/sailing/product/GENERAL/bindSvvd
+        json: [$priceTemplateId]
+        headers:
+            X-Auth-Token: $cnAdminUserToken
+            Content-Type: application/json;charset=UTF-8
+    extract:
+        taskId: "body.taskId"
+    teardown_hooks:
+            - ${sleepTime(2)}
+    validate:
+        - eq: ['status_code', 200]
+        - eq: ['body.status', "IN_PROGRESS"]
+        - ne: ['body.totalElements', 0]
+
+-
+    name: product release page batch submit audit
+    request:
+        method: POST
+        url: /api/product/sailing/product/GENERAL/request-review-product
+        json: {"porCity":{"createTime":null,"createBy":null,"updateTime":"2019-05-02T00:07:51Z","updateBy":"SYS","isActive":1,"id":"738872886232873","unlocode":"CNSHA","cityName":"Shanghai","cntyName":"Shanghai","stateName":"Shanghai","stateCode":"SH","ctryName":"China","ctryCode":"CN","cityFullNameEn":"Shanghai","cityFullNameCn":"上海","refUuid":null,"isDummy":null},"fndCity":{"createTime":null,"createBy":null,"updateTime":"2019-05-02T00:09:32Z","updateBy":"SYS","isActive":1,"id":"738872886233842","unlocode":"PKKAR","cityName":"Karachi","cntyName":null,"stateName":"Sindh","stateCode":null,"ctryName":"Pakistan","ctryCode":"PK","cityFullNameEn":"Karachi","cityFullNameCn":"卡拉奇","refUuid":null,"isDummy":null},"serviceCode":"PMX","vesselName":"","updateBy":"pogba.ye","status":"DRAFT","pageType":"RELEASE","sortedCriteria":{"releaseBatchStatus":"ALL","sortItem":"tradeLaneCode","sortOrder":"descending"},"targetIds":[],"searchProdTypes":[],"searchPaymentTerms":[],"tradeLaneCode":"AAW","firstServiceCode":"","voyageNo":"","direction":"","firstPolPort":{},"porFacilityCode":"","polPort":{},"transitPortId":"","podPort":{},"lastPodPort":{},"fndFacilityCode":"","channelCode":"GENERAL","commodityCode":$commodityCode,"notificationParam":{"isTrusted":true},"sendEmail":false}
+        headers:
+            X-Auth-Token: $cnAdminUserToken
+            Content-Type: application/json;charset=UTF-8
+    extract:
+        reviewBusinessKey: "body.businessKey"
+    validate:
+        - eq: ['status_code', 200]
+        - contains: ['body.businessKey', "pogba.ye"]
+
+-
+    name: product review page get review task id
+    request:
+        method: GET
+        url: /api/workflow/internal/GENERAL/task/pending
+        headers:
+            X-Auth-Token: $cnAdminUserToken
+            Content-Type: application/json;charset=UTF-8
+    extract:
+        reviewTaskId: "body.0.taskId"
+    teardown_hooks:
+            - ${sleepTime(2)}
+    validate:
+        - eq: ['status_code', 200]
+        - eq: ['body.0.businessKey', $reviewBusinessKey]
+
+-
+    name: product review page audit reject
+    request:
+        method: POST
+        url: /api/workflow/internal/product/task/reject
+        json: {"taskId":$reviewTaskId,"comment":$rejectComments}
+        headers:
+            X-Auth-Token: $cnAdminUserToken
+            Content-Type: application/json;charset=UTF-8
+    validate:
+        - eq: ['status_code', 200]
+
+-
+    name: product release page batch delete review reject products
+    request:
+        method: DELETE
+        url: /api/product/sailing/product/GENERAL/batch/criteria
+        json: {"porCity":{"createTime":null,"createBy":null,"updateTime":"2019-05-02T00:07:51Z","updateBy":"SYS","isActive":1,"id":"738872886232873","unlocode":"CNSHA","cityName":"Shanghai","cntyName":"Shanghai","stateName":"Shanghai","stateCode":"SH","ctryName":"China","ctryCode":"CN","cityFullNameEn":"Shanghai","cityFullNameCn":"上海","refUuid":null,"isDummy":null},"fndCity":{"createTime":null,"createBy":null,"updateTime":"2019-05-02T00:09:32Z","updateBy":"SYS","isActive":1,"id":"738872886233842","unlocode":"PKKAR","cityName":"Karachi","cntyName":null,"stateName":"Sindh","stateCode":null,"ctryName":"Pakistan","ctryCode":"PK","cityFullNameEn":"Karachi","cityFullNameCn":"卡拉奇","refUuid":null,"isDummy":null},"serviceCode":"","vesselName":"","updateBy":"pogba.ye","status":"DRAFT","pageType":"RELEASE","sortedCriteria":{"releaseBatchStatus":"ALL","sortItem":"updateTime","sortOrder":"descending"},"targetIds":[],"searchProdTypes":[],"searchPaymentTerms":[],"tradeLaneCode":"","firstServiceCode":"","voyageNo":"","direction":"","firstPolPort":{},"porFacilityCode":"","polPort":{},"transitPortId":"","podPort":{},"lastPodPort":{},"fndFacilityCode":"","channelCode":"GENERAL","commodityCode":$commodityCode}
+        headers:
+            X-Auth-Token: $cnAdminUserToken
+            Content-Type: application/json;charset=UTF-8
+    validate:
+        - eq: ['status_code', 200]
+
+-
+    name: product release page batch delete success
+    request:
+        method: POST
+        url: /api/product/sailing/product/GENERAL/list?page=1&size=20
+        json: {"porCity":{"createTime":null,"createBy":null,"updateTime":"2019-05-02T00:07:51Z","updateBy":"SYS","isActive":1,"id":"738872886232873","unlocode":"CNSHA","cityName":"Shanghai","cntyName":"Shanghai","stateName":"Shanghai","stateCode":"SH","ctryName":"China","ctryCode":"CN","cityFullNameEn":"Shanghai","cityFullNameCn":"上海","refUuid":null,"isDummy":null},"fndCity":{"createTime":null,"createBy":null,"updateTime":"2019-05-02T00:09:32Z","updateBy":"SYS","isActive":1,"id":"738872886233842","unlocode":"PKKAR","cityName":"Karachi","cntyName":null,"stateName":"Sindh","stateCode":null,"ctryName":"Pakistan","ctryCode":"PK","cityFullNameEn":"Karachi","cityFullNameCn":"卡拉奇","refUuid":null,"isDummy":null},"serviceCode":"","vesselName":"","updateBy":"pogba.ye","status":"DRAFT","pageType":"RELEASE","sortedCriteria":{"releaseBatchStatus":"ALL","sortItem":"tradeLaneCode","sortOrder":"descending"},"targetIds":[],"updateTimeRange":null,"searchProdTypes":[],"searchPaymentTerms":[],"tradeLaneCode":"","firstServiceCode":"","voyageNo":"","direction":"","firstPolPort":{},"porFacilityCode":"","polPort":{},"transitPortId":"","podPort":{},"lastPodPort":{},"fndFacilityCode":"","channelCode":"GENERAL"}
+        headers:
+            X-Auth-Token: $cnAdminUserToken
+            Content-Type: application/json;charset=UTF-8
+    validate:
+        - eq: ['status_code', 200]
+        - eq: ['body.totalElements',0]

@@ -1,0 +1,41 @@
+{
+  "1f52adaa77d9cebb9b56f46b2ff902e1" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "562a9058c0ee9a6b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1608298628222,
+        "stop" : 1608298635174,
+        "duration" : 6952
+      }
+    } ]
+  },
+  "60719303e3931a4dc96718b88c16c7c4" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c7f2df25b58f357a",
+      "status" : "broken",
+      "statusDetails" : "httprunner.exceptions.ValidationFailure: assert status_code equal 200(int)\t==> fail\ncheck_item: status_code\ncheck_value: 500(int)\nassert_method: equal\nexpect_value: 200(int)",
+      "time" : {
+        "start" : 1608298619007,
+        "stop" : 1608298628193,
+        "duration" : 9186
+      }
+    } ]
+  }
+}

@@ -1,0 +1,63 @@
+脚手架创建项目
+httprunner startproject EctRegression
+
+支架项目有几个有效的测试用例，因此您无需任何编辑即可运行测试。
+hrun EctRegression
+
+hrun testcases\setUp\test.yml --log-level info --html=D:\workspace\EctRegression\reports\test.html   --这是pytest插件生成的报告
+
+cd D:\workspace\EctRegression\testcases\setUp\reports\html
+hrun test_test.py --alluredir=reports    --生成allure需要的数据
+allure generate D:\workspace\EctRegression\testcases\China\T02BindProducts\reports -o D:\workspace\EctRegression\testcases\China\T02BindProducts\reports\html  --clean   # –clean目的是先清空测试报告目录，再生成新的测试报告
+allure serve D:\workspace\EctRegression\testcases\China\T02BindProducts\reports\html    --访问allure网址
+
+
+安装HttpRunner后，系统将添加 5 个命令。
+
+httprunner：主命令，用于所有功能
+hrun：的别名httprunner run，用于运行YAML / JSON / pytest测试用例
+hmake：的别名httprunner make，用于将YAML / JSON测试用例转换为pytest文件
+har2case：的别名httprunner har2case，用于将HAR转换为YAML / JSON测试用例
+locusts：用于对 locusts 进行负载测试
+
+hrun D:\workspace\EctRegression\testcases\China\T02BindProducts --alluredir=reports  跑某目录下所有脚本
+hrun --startproject D:\workspace\EctRegression\testcases --html-report-name test
+
+variables:
+  - tokenid: ${get_token_id()}
+setup_hooks:
+  - ${setup_case()}
+teardown_hooks:
+  - ${teardown_case()}
+  
+  # 测试名称（必须的），String
+name:
+# 无条件跳过测试（可选的）,String,跳过测试的说明
+skip:
+# 条件为 true 时跳过测试（可选的）
+skipIf:
+# 条件为 false 时跳过测试（可选的）
+skipUnless:
+# 变量（可选的）, List,被上级（testcases，testsuite）覆盖
+variables:
+# 默认域名（可选的）.String
+base_url:
+# 请求参数（必须的）, dict, 与request中的参数相同
+request:
+# 提取器（可选的）, dict,提取返回参数
+extract:
+# 验证（可选的）, list
+validate:
+# 验证（可选的）, list,与validate相同
+validators:
+# 前置处理（可选的），list
+setup_hooks:
+# 后置处理（可选的），list
+teardown_hooks:
+
+debugtalk中的前置场景和后置场景
+
+debugtalk和yml文件在同一个文件下，就可以直接编写。可以放在同一个文件夹下，但是这样就读不到原本在根目录下的方法了。
+字符串拼接的方法   done
+还要加怎么设置环境   done
+城市基础数据API前置场景

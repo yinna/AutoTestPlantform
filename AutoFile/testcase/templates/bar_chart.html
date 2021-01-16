@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ECT自动化结果</title>
+    <!-- 引入 echarts.js -->
+{#    <script src="D:\workspace\automation\ect-test\commonFunction\echarts.min.js"></script>#}
+    <script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script>
+     <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+</head>
+<body>
+    <div>
+        <div>
+            <span>运行日期：</span>
+            <select id="run_date_select_id" class="dropdown" onchange="selectChange()">
+                <option>请选择</option>
+            </select>
+        </div>
+        <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+        <div id="main" style="width: 1000px;height:400px;" hidden="hidden"></div>
+    </div>
+    <script type="text/javascript">
+        function getRunDate(){
+            {#$('#run_date_select_id').empty();#}
+            $.ajax({
+                 type: "GET",
+                 url: "/echarts_bar/getRunDate/",
+                 dataType: "json",
+                 success: function(data){
+                     for(var i=0;i<data.length;i++){
+                     $('#run_date_select_id').append('<option value="'+data[i].runDate+'">'+data[i].runDate+'</option>');
+                     }
+                 }
+            });
+        };
+        function selectChange(){
+            var select_date = $("#run_date_select_id").find("option:selected").val();
+            console.log("value值：",select_date);
+            if (select_date != "请选择"){
+                $('#main').removeAttr('hidden');
+            }else{
+                $('#main').attr('hidden','hidden');
+            }
+            loadOneColumn(select_date);
+        };
+        function loadOneColumn(runDate) {
+            // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+        // 显示标题，图例和空的坐标轴
+        myChart.setOption({
+            title: {
+                text: '异步数据加载示例'
+            },
+            tooltip: {},
+            legend: {
+                data: ['通过','失败']
+            },
+            xAxis: {
+                data: []
+            },
+            yAxis: {
+                splitLine: { show: false },//去除网格线
+            },
+            series: [{
+                name: '通过',
+                type: 'bar',
+                barWidth:20,
+                barGap:0,
+                itemStyle: {
+                    normal: {
+                        label: {
+                            show: true,
+                            position: 'top',
+                            textStyle: {
+                                color: '#333'
+                            }
+                        }
+                    }
+                },
+                data: []
+            },
+            {
+                barWidth: 20,
+                barGap:0,
+                name: '失败',
+                type: 'bar',
+                itemStyle: {
+                    normal: {
+                        label: {
+                            show: true,
+                            position: 'top',
+                            textStyle: {
+                                color: '#333'
+                            }
+                        }
+                    }
+                },
+                data: []
+            }]
+        });
+
+        myChart.showLoading();    //数据加载完之前先显示一段简单的loading动画
+
+        var pass_nums = [];
+        var fail_nums = [];
+        var xAxis_data = [];
+
+        $.ajax({
+            type: 'get',
+            url: '/echarts_bar/data/',//请求数据的地址
+            dataType: "json",        //返回数据形式为json
+            data:{"runDate":runDate},
+            success: function (result) {
+                for (var i=0;i<result.length;i++){
+
+                    result_array = result[i];
+                    pass_nums.push(result_array[2]);
+                    fail_nums.push(result_array[3]);
+                    xAxis_data.push(result_array[1])
+                }
+
+                console.log(pass_nums);
+                myChart.hideLoading();    //隐藏加载动画
+                myChart.setOption({        //加载数据图表
+                    xAxis: {
+                        data: xAxis_data
+                    },
+                    series: [{
+                        // 根据名字对应到相应的系列
+                        name: '通过',  //显示在上部的标题
+                        data: pass_nums,
+                        color:'#3b7c0a'
+                    },
+                    {
+                        // 根据名字对应到相应的系列
+                        name: '失败',  //显示在上部的标题
+                        data: fail_nums,
+                        color:'#df0909'
+                    }]
+                });
+            },
+            error: function (errorMsg) {
+                //请求失败时执行该函数
+                console.log(errorMsg)
+                alert("errorMsg");
+                myChart.hideLoading();
+            }
+        });
+    };
+        getRunDate();
+    </script>
+    <style>
+        .dropdown{
+            width: 100px;
+            margin-bottom: 20px;
+        }
+    </style>
+</body>
+</html>

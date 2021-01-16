@@ -1,0 +1,45 @@
+
+config:
+    name: "request methods testcase with functions"
+    base_url: "http://mall.ectpp.opsmart.cn"
+    variables: 
+        today: ${getCurrentDay()}
+        nameZh: ${getJoinString($today,join,中国自动化注册企业)}
+        nameEn: ${getJoinString($today,join,ChinaRegressionRegisterCompany)}
+    verify: False
+
+teststeps:
+-
+    name: login
+    testcase: testcases/China/T01setUp/T01cnClientLogin.yml
+    export:
+        - cnPrimaryUserToken
+        - cnSubUserToken
+
+#-
+#    name: user submit company certification application
+#    request:
+#        method: POST
+#        url: /api/admin/company/apply-for-company-certification
+#        json: {"referrer":"","contactName":"jane","contactPhone":"17688191243","salesEmailPrefix":"","verification":{"phone":"13900002698","phoneCheckCode":"999999","email":"cn_subuser@test.com","emailCheckCode":"999999"},"user":{"name":"cn_subuser","idNumber":"110101199003077811","idCardFile":"8aaa49327674a80a017676153840012b"},"company":{"companyUuid":"","companyNo":"","nameZh":$nameZh,"nameEn":$nameEn,"country":"CN","countryPhoneCode":"86","phone":"20201218","addressZh":"珠海南方软件园","addressEn":"zhuhai south soft park","fax":"20201218","unifiedSocialCreditCode":"20201218","vat":null,"usSailingProduct":false,"businessQualificationFile":"","vatGeneralTaxPlayer":false,"authorizationFile":"8aaab5687674a80901767617576f0257","businessLicenseFile":"8aaab5687674a8090176761769b00258","businessRegistrationFile":null,"needFmcFilling":null,"fmcFilling":null,"chamberCommerceRegistration":null,"localBookingOffice":null,"taxIdentificationNo":null,"companyType":null,"validFmcLicenseNumber":null,"fmcLicense":null,"bankAccount":"这是测试银行账号","bankFullName":"中国测试银行","bankAddressProvince":"湖南","bankAddressCity":"长沙","rejectReason":"","certificationStatus":null,"bankAccountConfirm":"20201218这是测试银行账号"},"salesInfos":[]}
+#        headers:
+#            X-Auth-Token: $cnSubUserToken
+#            Content-Type: application/json;charset=UTF-8
+#    teardown_hooks:
+#        - ${sleepTime(2)}
+#    validate:
+#        - eq: ["status_code", 200]
+
+-
+    name: submit associate to exist company application
+    request:
+        method: POST
+        url: /api/admin/company/apply-for-company-affiliate
+        json: {"name":"cn_subuser","companyNo":"20201202001","companyID":"8aaa1561762194fd0176226478330000","companyNameZh":"中国测试企业","companyNameEn":"chinaTestCompany","countryCode":"CN"}
+        headers:
+            X-Auth-Token: $cnSubUserToken
+            Content-Type: application/json;charset=UTF-8
+    teardown_hooks:
+        - ${sleepTime(1)}
+    validate:
+        - eq: ['status_code', 200]

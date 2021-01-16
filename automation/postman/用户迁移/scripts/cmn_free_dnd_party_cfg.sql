@@ -1,0 +1,8 @@
+INSERT INTO cmn_free_dnd_party_cfg (uuid,create_by,create_time, update_by, update_time,Is_Active,company_id,party_sap_id) VALUES('a49c1afb734b402895a2d3b32c0947be','system',SYSDATE,'system',SYSDATE,1,'1ef93f6540c14a13bf03401259f5a1d9','6791315000');
+INSERT INTO cmn_free_dnd_party_cfg (uuid,create_by,create_time, update_by, update_time,Is_Active,company_id,party_sap_id) VALUES('f436f9afa0df4d50958bb10e9573bc88','system',SYSDATE,'system',SYSDATE,1,'1ef93f6540c14a13bf03401259f5a1d9','6538206000');
+INSERT INTO cmn_free_dnd_party_cfg (uuid,create_by,create_time, update_by, update_time,Is_Active,company_id,party_sap_id) VALUES('0e945c8a78ed4bc4b33d2ff6b36f646c','system',SYSDATE,'system',SYSDATE,1,'1ef93f6540c14a13bf03401259f5a1d9','6038986000');
+INSERT INTO cmn_free_dnd_party_cfg (uuid,create_by,create_time, update_by, update_time,Is_Active,company_id,party_sap_id) VALUES('20058499b91a41a98cf58f2e6b1f7a5b','system',SYSDATE,'system',SYSDATE,1,'1ef93f6540c14a13bf03401259f5a1d9','6456583000');
+INSERT INTO cmn_free_dnd_party_cfg (uuid,create_by,create_time, update_by, update_time,Is_Active,company_id,party_sap_id) VALUES('ae20846b906340baa54370bc3069bb03','system',SYSDATE,'system',SYSDATE,1,'1ef93f6540c14a13bf03401259f5a1d9','6446705000');
+INSERT INTO cmn_free_dnd_party_cfg (uuid,create_by,create_time, update_by, update_time,Is_Active,company_id,party_sap_id) VALUES('f04e1b9fafda4d4ab578720833089364','system',SYSDATE,'system',SYSDATE,1,'1ef93f6540c14a13bf03401259f5a1d9','6571496000');
+INSERT INTO cmn_free_dnd_party_cfg (uuid,create_by,create_time, update_by, update_time,Is_Active,company_id,party_sap_id) VALUES('19aaa7ac67184f65ab680295781bc8d0','system',SYSDATE,'system',SYSDATE,1,'1ef93f6540c14a13bf03401259f5a1d9','6359092000');
+COMMIT;

@@ -1,0 +1,38 @@
+config:
+    name: testcase description
+    variables: {}
+    verify: false
+teststeps:
+-   name: /api/common/tradegroup
+    request:
+        cookies:
+            Hm_lpvt_bdc73221fdeefe6cc0a4e8172e37c0a5: '1607583571'
+            Hm_lvt_bdc73221fdeefe6cc0a4e8172e37c0a5: 1606368909,1606877077,1606956508,1607392408
+            cookiePolicy: Accepted
+            cookiePreference: Accepted
+            django_language: zh-cn
+            sessionid: g8sziwvzdzfa6y20si720w5t5ynyt6g8
+            token: 4f77c858-629b-49e2-bf17-1fbc7151221b
+        headers:
+            Accept: application/json, text/plain, */*
+            Accept-Encoding: gzip, deflate
+            Accept-Language: zh-CN,zh;q=0.9
+            Connection: keep-alive
+            Content-Type: application/x-www-form-urlencoded
+            Cookie: django_language=zh-cn; sessionid=g8sziwvzdzfa6y20si720w5t5ynyt6g8;
+                cookiePolicy=Accepted; cookiePreference=Accepted; Hm_lvt_bdc73221fdeefe6cc0a4e8172e37c0a5=1606368909,1606877077,1606956508,1607392408;
+                token=4f77c858-629b-49e2-bf17-1fbc7151221b; Hm_lpvt_bdc73221fdeefe6cc0a4e8172e37c0a5=1607583571
+            Host: mall.ectpp.opsmart.cn
+            Referer: http://mall.ectpp.opsmart.cn/product
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+                like Gecko) Chrome/87.0.4280.88 Safari/537.36
+            X-Auth-Token: 4f77c858-629b-49e2-bf17-1fbc7151221b
+        method: GET
+        url: http://mall.ectpp.opsmart.cn/api/common/tradegroup
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json;charset=UTF-8

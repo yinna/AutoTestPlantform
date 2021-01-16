@@ -1,0 +1,58 @@
+
+config:
+    name: "request methods testcase with functions"
+    base_url: "http://mall.ectpp.opsmart.cn"
+    verify: False
+    variables:
+        username: ${getEnvInfo(pp,cnPrimaryUserAccount)}
+        subUser: ${getEnvInfo(${ENV(TESTENV)},cnClientSubuser)}
+    export: 
+        - cnPrimaryUserToken
+        - cnSubUserToken
+
+teststeps:
+-
+    name: get login captcha
+    request:
+        method: GET
+        url: /api/common/captcha/image
+        params:
+            d: ${getTimestamp()}
+        headers:
+            Content-Type: django_language=zh-cn; sessionid=w5187f5339p3dfsh94jwfmgsxao9upb0; cookiePolicy=Accepted; cookiePreference=Accepted; Hm_lvt_bdc73221fdeefe6cc0a4e8172e37c0a5=1607653582,1607737750,1607942362,1607942783; ECTIMGCAPTCHA=c51157c3-7617-4a87-ba06-cdd7dcca37c8; Hm_lpvt_bdc73221fdeefe6cc0a4e8172e37c0a5=1607949473
+    extract:
+        returnCookie: "cookies.ECTIMGCAPTCHA"
+    validate:
+        - eq: ["status_code", 200]
+
+-
+    name: primary User Login
+    request:
+        method: POST
+        url: /api/admin/user/login
+        params: 
+            username: $username
+            password: Ect2020!!
+        headers:
+            ECTIMGCAPTCHA: $returnCookie
+            Content-Type: application/x-www-form-urlencoded
+    extract:
+        cnPrimaryUserToken: "headers.X-Auth-Token"
+    validate:
+        - eq: ['status_code', 200]
+
+-
+    name: subUser Login
+    request:
+        method: POST
+        url: /api/admin/user/login
+        params: 
+            username: $subUser
+            password: Ect2020!!
+        headers:
+            ECTIMGCAPTCHA: $returnCookie
+            Content-Type: application/x-www-form-urlencoded
+    extract:
+        cnSubUserToken: "headers.X-Auth-Token"
+    validate:
+        - eq: ['status_code', 200]
