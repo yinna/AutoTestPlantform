@@ -214,8 +214,10 @@ def Api_send(request):
         api.update(last_body_method=ts_body_method,last_api_body=ts_api_body)
 
     # 发送请求获取返回值
-    print(ts_header)
-    header = json.loads(ts_header)  #处理header
+    try:
+        header = json.loads(ts_header)  #处理header
+    except:
+        return HttpResponse('请求头不符合json格式！')
     print(header)
     #拼接完整url
     if ts_host[-1] == '/' and ts_url[0] == '/':   #都有/
@@ -224,34 +226,37 @@ def Api_send(request):
         url = ts_host+'/'+ts_url
     else:
         url = ts_host + ts_url
-    if ts_body_method == 'none':
-        response = requests.request(ts_body_method.upper(),url,headers=header,data={})
-    elif ts_body_method == 'form-data':
-        files = []
-        payload = {}
-        for i in eval(ts_api_body):
-            payload[i[0]] = i[1]
-        response = requests.request(ts_body_method.upper(),url,headers=header,data=payload,files=files)
-    elif ts_body_method == 'x-www-form-urlencoded':
-        header['Content-Type'] = 'application/x-www-form-urlencoded'
-        payload = {}
-        for i in eval(ts_api_body):
-            payload[i[0]] = i[1]
-            response = requests.request(ts_body_method.upper(), url, headers=header, data=payload)
-    else:   #这是raw的五个子选项
-        if ts_body_method == 'Text':
-            header['Content-Type'] = 'text/plain'
-        if ts_body_method == 'Text':
-            header['Content-Type'] = 'text/plain'
-        if ts_body_method == 'Text':
-            header['Content-Type'] = 'text/plain'
-        if ts_body_method == 'Text':
-            header['Content-Type'] = 'text/plain'
-        if ts_body_method == 'Text':
-            header['Content-Type'] = 'text/plain'
-        response = requests.request(ts_body_method.upper(), url, headers=header, data=ts_api_body.encode('utf-8'))
-    response.encoding = "utf-8"
-    return HttpResponse(response.text)
+    try:
+        if ts_body_method == 'none':
+            response = requests.request(ts_body_method.upper(),url,headers=header,data={})
+        elif ts_body_method == 'form-data':
+            files = []
+            payload = {}
+            for i in eval(ts_api_body):
+                payload[i[0]] = i[1]
+            response = requests.request(ts_body_method.upper(),url,headers=header,data=payload,files=files)
+        elif ts_body_method == 'x-www-form-urlencoded':
+            header['Content-Type'] = 'application/x-www-form-urlencoded'
+            payload = {}
+            for i in eval(ts_api_body):
+                payload[i[0]] = i[1]
+                response = requests.request(ts_body_method.upper(), url, headers=header, data=payload)
+        else:   #这是raw的五个子选项
+            if ts_body_method == 'Text':
+                header['Content-Type'] = 'text/plain'
+            if ts_body_method == 'Text':
+                header['Content-Type'] = 'text/plain'
+            if ts_body_method == 'Text':
+                header['Content-Type'] = 'text/plain'
+            if ts_body_method == 'Text':
+                header['Content-Type'] = 'text/plain'
+            if ts_body_method == 'Text':
+                header['Content-Type'] = 'text/plain'
+            response = requests.request(ts_body_method.upper(), url, headers=header, data=ts_api_body.encode('utf-8'))
+        response.encoding = "utf-8"
+        return HttpResponse(response.text)
+    except Exception as e:
+        return HttpResponse(str(e))
 
 # 复制接口
 def copy_api(request):
@@ -281,12 +286,13 @@ def copy_api(request):
 def error_request(request):
     api_id = request.GET['api_id']
     new_body = request.GET['new_body']
+    span_text = request.GET['span_text']
     api = DB_apis.objects.filter(id=api_id)[0]
     method = api.api_method
     url = api.api_url
     host = api.api_host
     header = api.api_header
-    body_method = api.api.body_method
+    body_method = api.body_method
     header = json.loads(header)
     if host[-1] == '/' and url[0] == '/':
         url = host[:-1] + url
@@ -294,25 +300,31 @@ def error_request(request):
         url = host + '/'  + url
     else:
         url = host + url
-    if body_method == 'form-data':
-        files = []
-        payload = {}
-        for i in eval(new_body):
-            payload[i[0]] = i[1]
-        response = requests.request(method.upper(),url,headers=header,data=payload,files=files)
-    elif body_method == 'x-www-form-urlencoded':
-        header['Content-Type'] = 'application/x-www-form-urlencoded'
-        payload = {}
-        for i in eval(new_body):
-            payload[i[0]] = i[1]
-        response = requests.request(method.upper(), url, headers=header, data=payload)
-    elif body_method == 'Json':
-        header['Content-Type'] = 'text/plain'
-        response = requests.request(method.upper(), url, headers=header, data=new_body.encode('utf-8'))
-    else:
-        return HttpResponse('非法的请求体类型')
-    response.encoding = "utf-8"
-    return HttpResponse(response.text)
+    try:
+        if body_method == 'form-data':
+            files = []
+            payload = {}
+            for i in eval(new_body):
+                payload[i[0]] = i[1]
+            response = requests.request(method.upper(),url,headers=header,data=payload,files=files)
+        elif body_method == 'x-www-form-urlencoded':
+            header['Content-Type'] = 'application/x-www-form-urlencoded'
+            payload = {}
+            for i in eval(new_body):
+                payload[i[0]] = i[1]
+            response = requests.request(method.upper(), url, headers=header, data=payload)
+        elif body_method == 'Json':
+            header['Content-Type'] = 'text/plain'
+            response = requests.request(method.upper(), url, headers=header, data=new_body.encode('utf-8'))
+        else:
+            return HttpResponse('非法的请求体类型')
+        response.encoding = "utf-8"
+        res_json = {"response":response.text,"span_text":span_text}
+        return HttpResponse(json.dumps(res_json),content_type='application/json')
+    except:
+        res_json = {"response": '对不起，接口未通!', "span_text": span_text}
+        return HttpResponse(json.dumps(res_json),content_type='application/json')
+
 
 #返回echarts页面
 def bar_chart(request):
